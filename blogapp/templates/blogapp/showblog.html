@@ -1,2 +1,26 @@
 {% extends 'eventsapp/base.html' %}
 {% load static %}
+
+{% block title %}
+    <title>Blog page</title>
+{% endblock %}
+
+{% block content %}
+    <section class="py-5 container">
+    <h1 class="pb-5">Recent posts</h1>
+    {% for post in posts.all %}
+        <a class="nav-link" href="">
+            <h3>{{ post.title_post }}</h3>
+        </a>
+        <img class="image-fluid" height=300 src="{{ post.image.url }}" alt="">
+        <br>
+        <br>
+        <p>{{ post.get_summary_text }} <a href="">more</a></p>
+        {{ post.date_post }}
+        <br>
+        <br>
+        <br>
+    {% endfor %}
+
+    </section>
+{% endblock %}

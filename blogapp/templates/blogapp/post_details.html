@@ -6,8 +6,19 @@
 {% endblock %}
 
 {% block content %}
-    <section class="py-5 container">
-    <h1>{{ post.title_post }}</h1>
+    <section class="py-5 ext-center container">
+        <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="mx-auto">{{ post.title_post }}</h1>
+            <br>
+            <br>
+            <br>
+            <br>
+            <img src="{{ post.image.url }}" alt="">
+            <br>
+            <br>
+            <br>
+            <p>{{ post.text_post }}</p>
+        </div>
 
     </section>
 {% endblock %}

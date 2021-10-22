@@ -10,6 +10,9 @@
         <section class="py-5 text-center container">
             <div class="row py-lg-5">
                 <div class="col-lg-6 col-md-8 mx-auto">
+                    <img src="{% static '6.jpeg' %}"  height=300 alt="">
+                    <br>
+                    <br>
                     <p class="lead text-muted">Hello there. I'm glad to see you!</p>
                     <p class="lead text-muted">You can write me right now!</p>
                     <p>
@@ -27,12 +30,8 @@
                         <div class="col">
                             <div class="card shadow-sm">
                                 <img class="card-img-top" src="{{ event.evt_image.url }}" alt="">
-
                                 <div class="card-body">
                                     <p class="card-text">{{ event.evt_short_description }}</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    </div>
                                 </div>
                             </div>
                         </div>
